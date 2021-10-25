@@ -6,8 +6,8 @@
 * Designed by: [Dr. Kevin Wang](mailto:kevinw@comp.hkbu.edu.hk)
 * Q & A: [Piazza](https://piazza.com/class/kodsr5zs2km5ls)
 * Due: 
-  * UAT Due: 11:59am (noon), 11th October, 2021 (Monday)
-  * Programming Due: 23:59pm (midnight), 23rd October, 2021 (Saturday) 
+  * UAT Due: 11:59am (noon), 3rd November, 2021 (Wednesday)
+  * Programming Due: 23:59pm (midnight), 13th November, 2021 (Saturday) 
 * Download the starter code: [here](skeleton.zip)
 * Download the demo program: [here](demo.jar)
 * Download everything from the assignment: [here](https://github.com/khwang0/COMP2026-2122PA2/archive/refs/heads/master.zip)
@@ -28,7 +28,7 @@ You are given the opportunity to get familiar with the concept of class, object 
 
 ## Changes of rule set in our assignments
 
-We follow all rule described in the [Rule of the Game](https://www.ultraboardgames.com/king-up/game-rules.php) except we only play the game for one round.
+We follow all rules described in the [Rule of the Game](https://www.ultraboardgames.com/king-up/game-rules.php) except we only play the game for one round.
 
 We assume the game is played by one human player and three computer players. That means all decisions made by computer players (placing the character, moving the character and vote) will be done automatically while all decisions are all done by the user.
 
@@ -51,15 +51,14 @@ There are some descriptions for the classes and their methods that you are requi
 
 ## Demo
 
-A sample program can be found here (To be arranged). The sample program provides you an understanding of the program. You do not need to follow the exact wording and output format of the program. 
+A sample program can be found [here](demo.jar). The sample program provides you an understanding of the program. You do not need to follow the exact wording and output format of the program. 
 
 ## Programming Style and Documentation 
 
-Good programming style (indentation, comments…) is always essential.  Blank lines, spaces between operators/variables (wherever appropriate) and meaningful variable names are required.  You should use constants wherever possible.  Your program should be properly indented.  Good choice of variable names and method names is also essential.  Your program must have proper internal documentation, as described below: 
-Header Block For your java file, there must be a header at the beginning of the file, with (1) a short description explaining the details of your program design; (2) your name; and (3) your UID. 
+Good programming style (indentation, comments) are always essential.  Blank lines, spaces between operators/variables (wherever appropriate) and meaningful variable names are required. Your program should be properly indented.  Good choice of variable names and method names is also essential.  Your program must have proper internal documentation, as described below: 
 
-### Method Header Block 
-For each method, there should be a header with (1) a brief description about what the method does and how it is achieved; (2) a brief note explaining the parameters of the method (if any); and (3) a brief note explaining the return value of the method (if applicable). 
+### Header Block 
+For your java file, there must be a header at the beginning of the file, with your name and your UID. 
 
 ### Inline Comments 
 Wherever necessary and appropriate, you should add inline comments to explain the execution flow of your program. 
@@ -91,13 +90,19 @@ if (lateHour > 0) {
  Plagiarism is a serious offence and can be easily detected. Please don't share your code to your classmate even if they are threatening you with friendship. If they don't have the ability to work on something that can compile, they would not be able to change your code to a state that we can't detect the plagiarism. For the first commit of plagiarism, regardless you shared your code or copied code from others, you will receive 0 with an addition of 5 mark penalty. If you commit plagiarism twice, your case will be presented in the exam board and you receive a F directly.
  
 
+### Plagiarism
+
+ Plagiarism is a serious offence and can be easily detected. Please don't share your code to your classmate even if they are threatening you with friendship. If they don't have the ability to work on something that can compile, they would not be able to change your code to a state that we can't detect the act of plagiarism. For the first commit of plagiarism, regardless you shared your code or copied code from others, you will receive 0 with an addition of 5 mark penalty. If you commit plagiarism twice, your case will be presented in the exam board and you will receive a F directly.
+
 ## Marking Scheme 
 This assignment is worth 9% of the course mark.  There are three elements in the marking scheme: 
 * 5% - Understanding the Assignment Test (UAT)
 * 90% - a working program that functions as specified 
 * 5% - Programming style and documentation 
+* -30% - If you define any non-private fields (instance variable) or non-private method
+  
+Please note that submitting a program that cannot be compiled would result in a very low mark. Unlike assignment 1, you can define your private fields and any private method. However, these fields and methods must be private.
 
-Please note that submitting a program that cannot be compiled would result in very low mark. 
 
  
 
@@ -107,7 +112,7 @@ Should the teaching team see fit, students may be requested to attend an intervi
 ## Understanding the Assignment (UAT)
 
 Answer the following question that on Moodle.
-Due: 6/11/2021 (12:00nn)
+Due: 3/11/2021 (12:00nn)
 1. Please state the order of Scoring stage, Placing stage, and Playing stage. 
 2. How many characters needed to be placed? Which method is responsible to do it?
 3. What will happen if a player has running out of veto card? Which variable in the program is responsible to store the number of veto card?
