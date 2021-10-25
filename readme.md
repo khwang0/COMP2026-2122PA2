@@ -1,12 +1,22 @@
-![](hkbu.png))
+![](hkbu.png)
 # COMP2026 Programming Assignment 2 - King Up!
 
 ## 2021-22 Semester 1
 
 * Designed by: [Dr. Kevin Wang](mailto:kevinw@comp.hkbu.edu.hk)
 * Q & A: [Piazza](https://piazza.com/class/kodsr5zs2km5ls)
-* Due: TBD
-* Download the starter code: [here]() 
+* Due: 
+  * UAT Due: 11:59am (noon), 11th October, 2021 (Monday)
+  * Programming Due: 23:59pm (midnight), 23rd October, 2021 (Saturday) 
+* Download the starter code: [here](skeleton.zip)
+* Download the demo program: [here](demo.jar)
+* Download everything from the assignment: [here](https://github.com/khwang0/COMP2026-2122PA2/archive/refs/heads/master.zip)
+
+> To run the demo program type the following in your terminal:
+> ```java
+> java -jar demo.jar
+> ```
+
 
 ## Introduction
 
@@ -61,7 +71,24 @@ For submission, zip the src folder of your IntelliJ project, name the zip file a
 
 Please be reminded that both the **Late Penalty Rule** and the **Penalty for Plagiarism** are applied strictly to all submissions of this course (including this assignment).   
 
+### Late Penalty Rule
 
+```java
+if (lateHour > 0) {
+    if (lateHour < 24) 
+        mark *= 0.8;
+    else if (lateHour < 48)
+        mark = mark >> 1;
+        else if (lateHour < 72)
+            mark = mark >> 2;
+            else
+                mark &= 0;
+}
+```
+ 
+ ### Plagiarism
+
+ Plagiarism is a serious offence and can be easily detected. Please don't share your code to your classmate even if they are threatening you with friendship. If they don't have the ability to work on something that can compile, they would not be able to change your code to a state that we can't detect the plagiarism. For the first commit of plagiarism, regardless you shared your code or copied code from others, you will receive 0 with an addition of 5 mark penalty. If you commit plagiarism twice, your case will be presented in the exam board and you receive a F directly.
  
 
 ## Marking Scheme 
@@ -76,4 +103,12 @@ Please note that submitting a program that cannot be compiled would result in ve
 
 ## Interview 
 Should the teaching team see fit, students may be requested to attend an interview to explain about their program.  Students failing to attend such interview or to demonstrate a good understanding of their own program may result in mark deduction. 
+
+## Understanding the Assignment (UAT)
+
+Answer the following question that on Moodle.
+Due: 6/11/2021 (12:00nn)
+1. Please state the order of Scoring stage, Placing stage, and Playing stage. 
+2. How many characters needed to be placed? Which method is responsible to do it?
+3. What will happen if a player has running out of veto card? Which variable in the program is responsible to store the number of veto card?
 
